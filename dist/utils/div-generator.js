@@ -24,7 +24,7 @@ export const divGenerator = (array, div, classImg) => {
 };
 export const search = (array, searchbar) => {
     let value = [];
-    const query = searchbar.value;
+    const query = searchbar.value.toLowerCase();
     array.forEach((thread) => {
         if (thread.title.toLowerCase().includes(query)) {
             value.push(thread);
@@ -36,3 +36,4 @@ export const displaySearchResults = (results, container) => {
     container.innerHTML = "";
     divGenerator(results, container, "farm-img-container");
 };
+//# sourceMappingURL=div-generator.js.map

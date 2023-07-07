@@ -9,9 +9,10 @@
         "allowSyntheticDefaultImports": true,
         "declaration": true,
         "baseUrl": "src/",
+        "sourceMap": true
     },
     "files": [
-        "src/app.ts", 
+        "src/app.ts"
     ],
     "include": ["/src/types/**/*", "src", "types"]
     

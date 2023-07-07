@@ -33,7 +33,7 @@ export const divGenerator = (
 
 export const search = (array: Thread[], searchbar: HTMLInputElement): Thread[] => {
     let value: Thread[] = [];
-    const query = searchbar.value;
+    const query = searchbar.value.toLowerCase();
   
 
   array.forEach((thread) => {
