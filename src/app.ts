@@ -1,5 +1,5 @@
 import { displaySearchResults, divGenerator, search } from "./utils/div-generator.js";
-import { potentielThreads, threads } from "./threads/threads.js";
+import { farmThread, potentielThreads, threads } from "./threads/threads.js";
 import { Thread } from "types/threads-array.js";
 
 const containerTotal = document.querySelector(
@@ -11,13 +11,24 @@ if (document.title === "Tous les threads") {
   divGenerator(threads, containerTotal, "div-image");
 }
 
-if (document.title === "Farm") {
+if (document.title === "Potentiel") {
   divGenerator(potentielThreads, containerTotal, "farm-img-container");
+}
+
+if (document.title === "Farm") {
+  divGenerator(farmThread, containerTotal, "farm-img-container");
 }
 
 
 searchBar.addEventListener("keyup", () => {
-        const isFind: Thread[] = search(potentielThreads, searchBar);
-        displaySearchResults(isFind, containerTotal)
-        console.log(isFind);
+  if (document.title === "Potentiel") {
+    const isFind: Thread[] = search(potentielThreads, searchBar);
+    displaySearchResults(isFind, containerTotal)
+    console.log(isFind);
+  };
+  if (document.title === "Farm") {
+    const isFind: Thread[] = search(farmThread, searchBar);
+    displaySearchResults(isFind, containerTotal)
+    console.log(isFind);
+  }
   });

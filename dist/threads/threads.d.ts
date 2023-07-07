@@ -1,10 +1,4 @@
-export declare const threads: {
-    title: string;
-    img: string;
-    link: string;
-}[];
-export declare const potentielThreads: {
-    title: string;
-    img: string;
-    link: string;
-}[];
+import { Thread } from "types/threads-array";
+export declare const threads: Thread[];
+export declare const potentielThreads: Thread[];
+export declare const farmThread: Thread[];

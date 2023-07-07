@@ -1,4 +1,6 @@
-export const threads = [
+import { Thread } from "types/threads-array";
+
+export const threads: Thread[]  = [
   {
     title: "Campagne Super renforcement",
     img: "./images/FzDUZ2WXwAA7Va2.jpeg",
@@ -12,12 +14,22 @@ export const threads = [
   {
     title: "Avis sur le potentiel",
     img: "./images/F0SiJzMWIAgYv65.jpeg",
-    link: "https://twitter.com/Ambre_thr/status/1676643316522442752",
+    link: "/src/pages/potentiel.html",
   }
 ];
 
 
-export const potentielThreads = [
+export const potentielThreads: Thread[]  = [
+  {
+    title: "Potentiel des nouvelles unités des 8 ans",
+    img: "../images/b06d2f5a199755410759c48c3a36c691.png",
+    link: "https://twitter.com/Ambre_thr/status/1676966957420265472",
+  },
+  {
+    title: "Potentiel des détecteurs des portails des 8 ans P1 ",
+    img: "../images/b534e46ca7cc1e0c5d940e1cfe2577e7.png",
+    link: "https://twitter.com/Ambre_thr/status/1676966960498896897",
+  },
   {
     title: "Bulma, Goku, Great Saiyaman F2P",
     img: "../images/FstY5XvWcAEq7R3.png",
@@ -77,5 +89,39 @@ export const potentielThreads = [
     title: "Potentiel DDF Gogeta AGI Z-TUR et Broly END Z-TUR",
     img: "../images/FljBJOXXEAEI8rk.png",
     link: "https://twitter.com/Ambre_thr/status/1610250085882908672",
+  },
+  {
+    title: "Potentiel Gohan Beast, Piccolo Orange et les sideckicks",
+    img: "../images/FlEnFBBXEAEbih6.png",
+    link: "https://twitter.com/Ambre_thr/status/1608111339263905792",
+  },
+  {
+    title: "Potentiel des Gamma F2P",
+    img: "../images/FlEnHmOXoAMrI76.png",
+    link: "https://twitter.com/Ambre_thr/status/1608111342745014274",
+  },
+]
+
+
+export const farmThread: Thread[] = [
+  {
+    title: "Guide farm des liens",
+    img: "../images/FskFpBuWAAoDJeu.jpeg",
+    link: "https://twitter.com/Ambre_thr/status/1641879336549531653",
+  },
+  {
+    title: "Guide nouveautés Baba shop et farm zénis",
+    img: "../images/Baba_shop_ban.webp",
+    link: "https://twitter.com/Ambre_thr/status/1646062271137816576",
+  },
+  {
+    title: "Guide Tenkachi Budokai",
+    img: "../images/FzpbokwXgAAf7OO.jpeg",
+    link: "https://twitter.com/Ambre_thr/status/1673763957494915116",
+  },
+  {
+    title: "Guide Farm Z-Battle",
+    img: "../images/FzyBCyeWcAIgY58.png",
+    link: "https://twitter.com/Ambre_thr/status/1674391244556976135",
   },
 ]

@@ -31,13 +31,10 @@ export const divGenerator = (
   });
 };
 
-export const search = (
-    array: Thread[],
-    searchbar: HTMLInputElement
-    ): Thread[] => {
+export const search = (array: Thread[], searchbar: HTMLInputElement): Thread[] => {
     let value: Thread[] = [];
-  const query = searchbar.value;
-  console.log(query);
+    const query = searchbar.value;
+  
 
   array.forEach((thread) => {
     if (thread.title.toLowerCase().includes(query)) {

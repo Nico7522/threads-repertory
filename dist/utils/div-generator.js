@@ -25,7 +25,6 @@ export const divGenerator = (array, div, classImg) => {
 export const search = (array, searchbar) => {
     let value = [];
     const query = searchbar.value;
-    console.log(query);
     array.forEach((thread) => {
         if (thread.title.toLowerCase().includes(query)) {
             value.push(thread);
