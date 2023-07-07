@@ -11,17 +11,22 @@ if (document.title === "Potentiel") {
 if (document.title === "Farm") {
     divGenerator(farmThread, containerTotal, "farm-img-container");
 }
-searchBar.addEventListener("keyup", () => {
-    if (document.title === "Potentiel") {
-        const isFind = search(potentielThreads, searchBar);
-        displaySearchResults(isFind, containerTotal);
-        console.log(isFind);
-    }
-    ;
-    if (document.title === "Farm") {
-        const isFind = search(farmThread, searchBar);
-        displaySearchResults(isFind, containerTotal);
-        console.log(isFind);
-    }
-});
+
+if (searchBar) {
+    searchBar.addEventListener("keyup", () => {
+        if (document.title === "Potentiel") {
+            const isFind = search(potentielThreads, searchBar);
+            displaySearchResults(isFind, containerTotal);
+            console.log(isFind);
+        }
+        ;
+        if (document.title === "Farm") {
+            const isFind = search(farmThread, searchBar);
+            displaySearchResults(isFind, containerTotal);
+            console.log(isFind);
+        }
+    });
+    console.log("efdf");
+    
+}
 //# sourceMappingURL=app.js.map
