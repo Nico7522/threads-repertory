@@ -108,6 +108,21 @@ body {
     margin: auto;
     border-radius: 25px;
   }
+  .link {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2px;
+    font-size: 16px;
+    border: none;
+    background-color: #131111;
+    color: #fafafa;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
 }
 
 @media screen and (max-width: 1260px) {
