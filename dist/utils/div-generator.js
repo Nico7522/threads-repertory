@@ -9,6 +9,9 @@ export const divGenerator = (array, div, classImg) => {
         image.src = thread.img;
         let link = document.createElement("a");
         link.href = thread.link;
+        if (thread.link.includes('twitter')) {
+            link.target = "_blank";
+        }
         link.innerText = "Voir";
         link.classList.add("link");
         let divImage = document.createElement("div");
