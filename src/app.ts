@@ -20,18 +20,19 @@ if (document.title === "Farm") {
   divGenerator(farmThread, containerTotal, "farm-img-container");
 }
 
-
-searchBar.addEventListener("keyup", () => {
-  if (document.title === "Potentiel") {
-    const isFind: Thread[] = search(potentielThreads, searchBar);
-    displaySearchResults(isFind, containerTotal)
-    console.log(isFind);
-  };
-  if (document.title === "Farm") {
-    const isFind: Thread[] = search(farmThread, searchBar);
-    displaySearchResults(isFind, containerTotal)
-    console.log(isFind);
-    
-  }
-});
-console.log("efdf");
+if (searchBar) {
+  searchBar.addEventListener("keyup", () => {
+    if (document.title === "Potentiel") {
+      const isFind: Thread[] = search(potentielThreads, searchBar);
+      displaySearchResults(isFind, containerTotal)
+      console.log(isFind);
+    };
+    if (document.title === "Farm") {
+      const isFind: Thread[] = search(farmThread, searchBar);
+      displaySearchResults(isFind, containerTotal)
+      console.log(isFind);
+      
+    }
+  });
+  
+}

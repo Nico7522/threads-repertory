@@ -11,7 +11,6 @@ if (document.title === "Potentiel") {
 if (document.title === "Farm") {
     divGenerator(farmThread, containerTotal, "farm-img-container");
 }
-
 if (searchBar) {
     searchBar.addEventListener("keyup", () => {
         if (document.title === "Potentiel") {
@@ -26,7 +25,5 @@ if (searchBar) {
             console.log(isFind);
         }
     });
-    console.log("efdf");
-    
 }
 //# sourceMappingURL=app.js.map

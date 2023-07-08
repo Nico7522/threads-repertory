@@ -1,8 +1,8 @@
 export const threads = [
     {
-        title: "Campagne Super renforcement",
-        img: "./images/FzDUZ2WXwAA7Va2.jpeg",
-        link: "https://twitter.com/Ambre_thr/status/1671081357034782721",
+        title: "Campagne Partie 1 des 8 ans",
+        img: "./images/F0bRh17WIAAvV_Q.jpeg",
+        link: "https://twitter.com/Ambre_thr/status/1677268637877411840",
     },
     {
         title: "Astuces et guides sur le farm",

@@ -102,6 +102,35 @@ body {
     color: #fff;
 }
 
+.back {
+  display: inline-block;
+  padding: -10px -10px;
+  width: 3rem;
+  margin: auto;
+  margin-bottom: 2px;
+  font-size: 16px;
+  /* border: none; */
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #686161;
+  color: #e2dddd;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+.back:hover {
+  background-color: #f3f1f1;
+  color:#fff
+}
+
+.back > img {
+
+}
+
+
 @media screen and (max-width: 1430px) {
   .farm-img-container > img {
     width: 100%;
