@@ -99,6 +99,11 @@ export const potentielThreads = [
 ];
 export const farmThread = [
     {
+        title: "Z-battle non perma à farm pendant les 8 ans",
+        img: "../images/F0gm5NfXgAA-Zxb.jpeg",
+        link: "https://twitter.com/Ambre_thr/status/1677652965786624001",
+    },
+    {
         title: "Guide farm des liens",
         img: "../images/FskFpBuWAAoDJeu.jpeg",
         link: "https://twitter.com/Ambre_thr/status/1641879336549531653",
