@@ -16,6 +16,9 @@ export const divGenerator = (array, div, classImg) => {
         link.classList.add("link");
         let divImage = document.createElement("div");
         divImage.classList.add(classImg);
+        if (thread.id) {
+            divImage.setAttribute("id", thread.id);
+        }
         divImage.appendChild(image);
         threadContainer.appendChild(title);
         threadContainer.appendChild(divImage);

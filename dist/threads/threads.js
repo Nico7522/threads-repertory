@@ -7,12 +7,12 @@ export const threads = [
     {
         title: "Astuces et guides sur le farm",
         img: "./images/F0Sii_cWIAgBmV-.jpeg",
-        link: "/src/pages/farm.html",
+        link: "/threads/pages/farm.html",
     },
     {
         title: "Avis sur le potentiel",
         img: "./images/F0SiJzMWIAgYv65.jpeg",
-        link: "/src/pages/potentiel.html",
+        link: "/threads/pages/potentiel.html",
     }
 ];
 export const potentielThreads = [
@@ -122,6 +122,7 @@ export const farmThread = [
         title: "Guide Farm Z-Battle",
         img: "../images/FzyBCyeWcAIgY58.png",
         link: "https://twitter.com/Ambre_thr/status/1674391244556976135",
+        id: "last-child"
     },
 ];
 //# sourceMappingURL=threads.js.map

@@ -1,4 +1,4 @@
-import { Thread } from "types/threads-array";
+import { Thread } from "../types/threads-array";
 
 export const threads: Thread[]  = [
 // DATA

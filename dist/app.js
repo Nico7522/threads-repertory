@@ -1,4 +1,4 @@
-import { displaySearchResults, divGenerator, search } from "./utils/div-generator.js";
+import { displaySearchResults, divGenerator, search, } from "./utils/div-generator.js";
 import { farmThread, potentielThreads, threads } from "./threads/threads.js";
 const containerTotal = document.querySelector(".container-total");
 const searchBar = document.querySelector(".search-bar");
@@ -18,11 +18,9 @@ if (searchBar) {
             displaySearchResults(isFind, containerTotal);
             console.log(isFind);
         }
-        ;
         if (document.title === "Farm") {
             const isFind = search(farmThread, searchBar);
             displaySearchResults(isFind, containerTotal);
-            console.log(isFind);
         }
     });
 }

@@ -1,9 +1,10 @@
-import { Thread } from "types/threads-array.js";
+import { Thread } from "../types/threads-array";
 
 export const divGenerator = (
   array: Thread[],
   div: HTMLDivElement,
-  classImg: string
+  classImg: string,
+ 
 ) => {
   array.map((thread: any) => {
     let threadContainer = document.createElement("div") as HTMLDivElement;
@@ -22,6 +23,9 @@ export const divGenerator = (
     link.classList.add("link");
     let divImage = document.createElement("div");
     divImage.classList.add(classImg);
+    if (thread.id) {
+      divImage.setAttribute("id", thread.id)
+    }
     divImage.appendChild(image);
 
     threadContainer.appendChild(title);

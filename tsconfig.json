@@ -1,19 +1,16 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "target": "ES2021",
-        "strict": true,
-        "noEmitOnError": true,
-        "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true,
-        "declaration": true,
-        "baseUrl": "src/",
-        "sourceMap": true
-    },
-    "files": [
-        "src/app.ts"
-    ],
-    "include": ["/src/types/**/*", "src", "types"]
-    
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2021",
+    "strict": true,
+    "noEmitOnError": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "baseUrl": "threads/",
+    "sourceMap": true
+  },
+  "files": ["threads/app.ts"],
+  "include": ["/threads/types/**/*", "threads", "types"]
 }

@@ -1,12 +1,15 @@
-import { displaySearchResults, divGenerator, search } from "./utils/div-generator.js";
+import {
+  displaySearchResults,
+  divGenerator,
+  search,
+} from "./utils/div-generator.js";
 import { farmThread, potentielThreads, threads } from "./threads/threads.js";
-import { Thread } from "types/threads-array.js";
-
+import { Thread } from "./types/threads-array";
 
 const containerTotal = document.querySelector(
   ".container-total"
 ) as HTMLDivElement;
-const searchBar = document.querySelector(".search-bar") as any
+const searchBar = document.querySelector(".search-bar") as any;
 
 if (document.title === "Tous les threads") {
   divGenerator(threads, containerTotal, "div-image");
@@ -24,15 +27,14 @@ if (searchBar) {
   searchBar.addEventListener("keyup", () => {
     if (document.title === "Potentiel") {
       const isFind: Thread[] = search(potentielThreads, searchBar);
-      displaySearchResults(isFind, containerTotal)
+      displaySearchResults(isFind, containerTotal);
       console.log(isFind);
-    };
+    }
     if (document.title === "Farm") {
       const isFind: Thread[] = search(farmThread, searchBar);
-      displaySearchResults(isFind, containerTotal)
-      console.log(isFind);
+      displaySearchResults(isFind, containerTotal);
       
     }
   });
-  
 }
+
