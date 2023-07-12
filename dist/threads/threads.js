@@ -1,5 +1,10 @@
 export const threads = [
     {
+        title: "Idées améliorations du jeu",
+        img: "./images/F0xK0b5X0AABteo.jpeg",
+        link: "https://twitter.com/Ambre_thr/status/1678824393865154560",
+    },
+    {
         title: "Campagne Partie 1 des 8 ans",
         img: "./images/F0bRh17WIAAvV_Q.jpeg",
         link: "https://twitter.com/Ambre_thr/status/1677268637877411840",
@@ -109,7 +114,7 @@ export const farmThread = [
         link: "https://twitter.com/Ambre_thr/status/1641879336549531653",
     },
     {
-        title: "Guide nouveautés Baba shop et farm zénis",
+        title: "Guide nouveautées Baba shop et farm zénis",
         img: "../images/Baba_shop_ban.webp",
         link: "https://twitter.com/Ambre_thr/status/1646062271137816576",
     },
